@@ -6,7 +6,7 @@ def find_gcd(x):
     r=[]
     for i in range(1,len(x)+1):
         if int(x[i])%i==0:
-            r.append(x(i))
+            r.insert(i,i)
     
     return r
-print(find_gcd([13, 5, 9, 11, 3]))
+#print(find_gcd([13, 5, 9, 11, 3]))
