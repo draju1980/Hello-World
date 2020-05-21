@@ -1,19 +1,3 @@
-#Enter loan amount: 1000.0
-#Enter annual interest rate (percent): 10.0
-#Enter loan duration in years: 5
-
-#The output of your program should be:
-
-#LOAN AMOUNT: 1000 INTEREST RATE (PERCENT): 10
-#DURATION (YEARS): 5 MONTHLY PAYMENT: 21
-#YEAR: 1 BALANCE: 837 TOTAL PAYMENT 254
-#YEAR: 2 BALANCE: 658 TOTAL PAYMENT 509
-#YEAR: 3 BALANCE: 460 TOTAL PAYMENT 764
-#YEAR: 4 BALANCE: 241 TOTAL PAYMENT 1019
-#YEAR: 5 BALANCE: 0 TOTAL PAYMENT 1274
-
-
-
 # Your function for calculating payment goes here
 def loan_py_mnt(pa,rate,dur):
     if rate==0:
@@ -42,9 +26,4 @@ print("LOAN AMOUNT:",principal,"INTEREST RATE (PERCENT):",annual_interest_rate)
 print("DURATION (YEARS):",duration,"MONTHLY PAYMENT:",int(monthly_payment))
 for year in range(1,1+duration):
     balance=loan_balance(principal,annual_interest_rate,duration,year*12)
-    print("YEAR:",year,"BALANCE:",int(balance),"  TOTAL PAYMENT ",int(monthly_payment*year*12))
-    
-    
-    
-    
-    
+    print("YEAR:",year,"BALANCE:",int(balance),"TOTAL PAYMENT ",int(monthly_payment*year*12))

@@ -1,0 +1,1 @@
+from ispangram import *
