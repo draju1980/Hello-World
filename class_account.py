@@ -25,12 +25,12 @@ class Account:
         self.deposit=deposit
         self.balance=self.balance + self.deposit
         print(f'Deposit Accepted and new balance is {self.balance}')
-        return self.balance,
   
-    def withdraw(self,wd_amt):
-        if self.balance <= wd_amt:
-            print("Funds Unavailable!")
+    def withdraw(self,amount):
+        self.amount=amount
+        if self.balance <= self.amount:
+            print(f'{self.owner} insufficient funds in your account')
         else:
-            self.balance=self.balance - wd_amt
+            self.balance=self.balance - self.amount
             print(f'Withdrawal Accepted and new balance is {self.balance}')
   
